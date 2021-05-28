@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>面试人员信息登记</title>
+</head>
+<body>
+    <h1>面试人员信息登记</h1>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>面试信息</legend>
+            应聘职位：<input type="text" placeholder="请输入本次应聘的职位" minlength="2" maxlength="30" required/><br/>
+            期望工资：<input type="number" value="5000" step="100"/><br/> <!-- value为设置默认值 step:步长 -->    
+        </fieldset>
+        <fieldset>
+            <legend>基本信息</legend>
+            姓名：<input type="text" placeholder="请输入姓名" minlength="2" maxlength="20" required/><br/>
+            性别：<input type="radio" name="sex" value="male" required/>男
+                 <input type="radio" name="sex" value="female" required/>女<br/>
+            生日：<input type="date" value="2000-01-01" required/><br/>
+            籍贯:<input type="text" list="city" placeholder="请选择或输入籍贯" required/><br/>
+            <datalist id="city">
+                <!-- <option value="none">请选择城市</option> -->
+            <option value="安徽"></option>
+            <option value="北京"></option> 
+            <option value="重庆"></option> 
+            <option value="福建"></option> 
+            <option value="甘肃"></option> 
+            <option value="广东"></option> 
+            <option value="广西"></option> 
+            <option value="贵州"></option> 
+            <option value="海南"></option> 
+            <option value="河北"></option> 
+            <option value="黑龙江"></option> 
+            <option value="河南"></option> 
+            <option value="湖北"></option> 
+            <option value="湖南"></option> 
+            <option value="江苏"></option> 
+            <option value="江西"></option> 
+            <option value="吉林"></option> 
+            <option value="辽宁"></option> 
+            <option value="宁夏"></option> 
+            <option value="内蒙古"></option> 
+            <option value="青海"></option> 
+            <option value="上海"></option> 
+            <option value="山西"></option> 
+            <option value="山东"></option> 
+            <option value="四川"></option> 
+            <option value="陕西"></option> 
+            <option value="天津"></option> 
+            <option value="西藏"></option> 
+            <option value="新疆"></option> 
+            <option value="云南"></option> 
+            <option value="浙江"></option> 
+            <option value="台湾"></option>
+            <option value="香港"></option>
+            <option value="澳门"></option>
+            <option value="其他"></option>
+            </datalist>
+            证件：<input type="text" maxlength="18" minlength="18" required/>
+        </fieldset>
+        <fieldset>
+            <legend>联系方式</legend>
+            电话：<input type="text" minlength="6" maxlength="20" required/><br/>
+            邮箱：<input type="text" required><br/>
+            住址：<input type="text" placeholder="请输入住址" minlength="8" maxlength="50" required/>
+        </fieldset>
+        <fieldset>
+            <legend>教育背景</legend>
+            学历：<select>
+                <option value="初中">初中</option>
+                <option value="高中">高中</option>
+                <option value="专科">专科</option>
+                <option value="本科">本科</option>
+                <option value="硕士">硕士</option>
+                <option value="博士">博士</option>
+            </select><br>
+            毕业院校：<input type="text" minlength="8" maxlength="50" placeholder="请输入毕业院校" required/><br>
+            专业：<input type="text" minlength="4" maxlength="20" placeholder="请输入专业" required/><br>
+            毕业时间：<input type="date" required/>
+        </fieldset>
+        <fieldset>
+            <legend>工作经历</legend>
+            请按时间倒序填写最近从业的三次工作经历<br>
+            单位名称：<input type="text" placeholder="单位名称"/>
+            入职时间：<input type="date"/>
+            离职时间：<input type="date"/>
+            职位：<input type="text" placeholder="职位"/><br>
+            <textarea placeholder="职责描述" cols="30" rows="3"></textarea><br>
+            单位名称：<input type="text" placeholder="单位名称"/>
+            入职时间：<input type="date"/>
+            离职时间：<input type="date"/>
+            职位：<input type="text" placeholder="职位"/><br>
+            <textarea placeholder="职责描述" cols="30" rows="3"></textarea><br>
+            单位名称：<input type="text" placeholder="单位名称"/>
+            入职时间：<input type="date"/>
+            离职时间：<input type="date"/>
+            职位：<input type="text" placeholder="职位"/><br>
+            <textarea placeholder="职责描述" cols="30" rows="3"></textarea><br>
+        </fieldset>
+        自我评价<br>
+        <textarea cols="50" rows="10"></textarea><br>
+        <input type="checkbox" name="aaa"  required/>本人承诺：以上所有信息均如实填写，如有不实，本人承担一切后果<br>
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+    </form>
+</body>
+</html>
